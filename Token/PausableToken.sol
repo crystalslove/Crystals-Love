@@ -1,8 +1,8 @@
-pragma solidity ^0.4.18;
+
+pragma solidity ^0.4.21;
 
 import "browser/StandardToken.sol";
 import "browser/Pausable.sol";
-
 
 /**
  * @title Pausable token

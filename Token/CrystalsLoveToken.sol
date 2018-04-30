@@ -1,4 +1,4 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.4.21;
 
 import "browser/PausableToken.sol";
 import "browser/BurnableToken.sol";
@@ -14,6 +14,6 @@ contract CrystalsLove is PausableToken, BurnableToken, ERC827Token {
 	function CrystalsLove  () public {
 		totalSupply_ = INITIAL_SUPPLY;
 		balances[msg.sender] = INITIAL_SUPPLY;
-		Transfer(0x0, msg.sender, INITIAL_SUPPLY);
+		emit Transfer(0x0, msg.sender, INITIAL_SUPPLY);
 	}
 }
