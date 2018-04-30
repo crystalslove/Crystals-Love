@@ -1,7 +1,7 @@
 pragma solidity ^0.4.21;
 
 
-import "browser/Ownable.sol";
+import "./Ownable.sol";
 
 
 /**

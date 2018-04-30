@@ -1,6 +1,6 @@
 pragma solidity ^0.4.21;
 
-import "browser/ERC20.sol";
+import "./ERC20.sol";
 
 /**
  * @title ERC827 interface, an extension of ERC20 token standard

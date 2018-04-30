@@ -2,8 +2,8 @@
 
 pragma solidity ^0.4.21;
 
-import "browser/ERC827.sol";
-import "browser/StandardToken.sol";
+import "./ERC827.sol";
+import "./StandardToken.sol";
 
 
 /**

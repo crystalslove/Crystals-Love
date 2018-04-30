@@ -1,8 +1,8 @@
 pragma solidity ^0.4.21;
 
-import "browser/PausableToken.sol";
-import "browser/BurnableToken.sol";
-import "browser/ERC827Token.sol";
+import "./PausableToken.sol";
+import "./BurnableToken.sol";
+import "./ERC827Token.sol";
 
 contract CrystalsLove is PausableToken, BurnableToken, ERC827Token {
 	string public constant name = "CRYSTALS";
