@@ -1,5 +1,4 @@
-
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.23;
 
 contract Token {
 	function transfer(address _to, uint256 _value) public returns (bool success);
@@ -34,8 +33,8 @@ contract Crystals is SafeMath {
 	event CancelOrder(address user, address executor, uint amountOrder);
 	event SendTokensForExecutor(address user, address executor, uint amountOrder);
 
-	function Crystals() public {
-		_addressTokenSmartContract = 0x4Cf7192Dd13A79894e42176238620B9d9e16bf3d;
+	constructor (address token) public {
+		_addressTokenSmartContract = token;
 	}
 			
 	function 	getAddressTokenSmartContract() public constant returns (address) {
